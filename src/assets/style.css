@@ -1,0 +1,30 @@
+.hero{
+	background: url('../assets/home-hero.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+ 
+.fade-enter-active {
+  transition-delay: .25s;
+}
+ 
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+.move-enter-active, .move-leave-active{
+  transform: translateX(0);
+  transition: all 0.4s linear;
+}
+.move-leave-to{
+  transform: translateX(100%);
+}
+.move-enter{
+  transform: translateX(-100%);
+}
